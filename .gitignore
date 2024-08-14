@@ -3,3 +3,5 @@ version.go
 go.sum
 *.iml
 *.exe
+*.db
+*.log
