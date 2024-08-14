@@ -13,12 +13,9 @@ const (
 	COMPLETE  STATUS = 4
 )
 
-type Instance struct {
-}
-
-type Queue struct {
+type JobObject[T Argument] struct {
 	Seq         int64
-	Args        Argument
+	Args        T
 	Priority    int
 	Identity    string
 	Attempts    int
